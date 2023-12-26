@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var cmd = &cobra.Command{
+var cmd1 = &cobra.Command{
 	Use: "1",
 	Run: func(cmd *cobra.Command, args []string) {
 		err := day01.Solve(inputFileName, debug)
@@ -17,5 +17,5 @@ var cmd = &cobra.Command{
 }
 
 func init() {
-	solveCmd.AddCommand(cmd)
+	solveCmd.AddCommand(cmd1)
 }
